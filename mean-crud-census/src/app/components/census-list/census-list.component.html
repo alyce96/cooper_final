@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h2 class="h2">Census List</h2>
+    </div>
+   
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Year of the Census</th>
+            <th scope="col">Census Taker's Name</th>
+            <th scope="col">Number of People in Household</th>
+            <th scope="col">Household State</th>
+            <th scope="col">Household City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let entry of Census; let i = index">
+            <th scope="row">{{census._Year of the Census}}</th>
+            <td>{{Census.Census Taker's Name}}</td>
+            <td>{{Census.Number of People in Household}}</td>
+            <td>{{Census.Household State}}</td>
+            <td>{{Census.Household City}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
